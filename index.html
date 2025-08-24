@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mougembo's Home Page</title>
-    <link rel="stylesheet" href="/CSS/StarryNight.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work in Progress</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .loader {
+      margin: 1.5rem auto;
+      border: 6px solid rgba(255,255,255,0.3);
+      border-top: 6px solid #fff;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-<div class="stars"></div>
-<div class="twinkling"></div>
-
+  <div class="card">
+    <h1>🚧 Work in Progress</h1>
+    <div class="loader"></div>
+    <p>Working hard or hardly working amirite!!!!</p>
+  </div>
 </body>
 </html>
